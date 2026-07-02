@@ -1,78 +1,92 @@
-# 🧠 MNIST Digit Recognition — CNN Implementation from Scratch
+# 🚀 Pep-Learning
 
-A Convolutional Neural Network (CNN) built with **TensorFlow / Keras** to classify handwritten digits (0–9) from the classic MNIST dataset, achieving **~98.6% validation accuracy**.
-
----
-
-## 📌 Project Overview
-
-This project demonstrates a complete deep-learning pipeline for image classification:
-
-1. **Data Loading & Exploration** — Load the MNIST dataset, inspect shapes, check for nulls.
-2. **Preprocessing** — Normalize pixel values (0–255 → 0–1), reshape images to 28×28×1 for the CNN.
-3. **Model Architecture** — Build a simple yet effective CNN with Keras Sequential API.
-4. **Training & Evaluation** — Train with Adam optimizer, visualize accuracy/loss curves, and generate a full classification report.
-5. **Prediction Visualization** — Display sample predictions alongside ground-truth labels.
+> **Placement preparation repository** — A collection of projects, implementations, and practice problems covering **Generative AI**, **Machine Learning**, **Neural Networks**, **Data Structures & Algorithms**, and more.
 
 ---
 
-## 🏗️ Model Architecture
+## 📌 About
 
-| Layer | Type | Output Shape | Parameters |
-|-------|------|-------------|------------|
-| 1 | Conv2D (32 filters, 3×3, ReLU) | (None, 26, 26, 32) | 320 |
-| 2 | MaxPooling2D (2×2) | (None, 13, 13, 32) | 0 |
-| 3 | Flatten | (None, 5408) | 0 |
-| 4 | Dense (128, ReLU) | (None, 128) | 692,352 |
-| 5 | Dense (10, Softmax) | (None, 10) | 1,290 |
+This repository serves as a centralized hub for all my placement training work. Each topic contains hands-on implementations, coding exercises, and real-world mini-projects built during placement classes.
 
-> **Total Parameters:** 693,962 (2.65 MB)
+**Goal:** Build a strong, demonstrable portfolio covering the core CS & AI/ML concepts expected in technical interviews and placement rounds.
 
 ---
 
-## 📊 Results
+## 📂 Repository Structure
 
-| Metric | Score |
-|--------|-------|
-| Training Accuracy | **99.9%** |
-| Validation Accuracy | **98.6%** |
-| Validation Loss | 0.0816 |
+```
+Pep-Learning/
+│
+├── 📁 Neural Networks
+│   └── mnist-dataset-cnn-implementation.ipynb    # CNN for MNIST digit recognition (~98.6% accuracy)
+│
+├── 📁 Machine Learning
+│   └── (coming soon)
+│
+├── 📁 Generative AI
+│   └── (coming soon)
+│
+├── 📁 DSA (Data Structures & Algorithms)
+│   └── (coming soon)
+│
+└── README.md
+```
 
-### Per-Class Performance (Validation Set)
+> 📝 *This repo is actively updated as new topics are covered in placement classes.*
 
-| Digit | Precision | Recall | F1-Score |
-|-------|-----------|--------|----------|
-| 0 | 0.99 | 0.99 | 0.99 |
-| 1 | 0.99 | 1.00 | 0.99 |
-| 2 | 0.99 | 0.98 | 0.99 |
-| 3 | 1.00 | 0.98 | 0.99 |
-| 4 | 0.97 | 1.00 | 0.98 |
-| 5 | 0.99 | 0.97 | 0.98 |
-| 6 | 0.99 | 0.99 | 0.99 |
-| 7 | 0.99 | 0.99 | 0.99 |
-| 8 | 0.98 | 0.98 | 0.98 |
-| 9 | 0.98 | 0.97 | 0.98 |
+---
+
+## 🧠 Topics Covered
+
+### 1. Neural Networks / Deep Learning
+| Project | Description | Tech | Status |
+|---------|-------------|------|--------|
+| [MNIST CNN](mnist-dataset-cnn-implementation.ipynb) | CNN from scratch for handwritten digit classification (0–9) | TensorFlow, Keras, Scikit-learn | ✅ Done |
+
+<details>
+<summary><b>📊 MNIST CNN — Key Results</b></summary>
+
+- **Architecture:** Conv2D(32) → MaxPool2D → Flatten → Dense(128) → Dense(10, Softmax)
+- **Training Accuracy:** 99.9%
+- **Validation Accuracy:** 98.6%
+- **Total Parameters:** 693,962
+- **Optimizer:** Adam | **Loss:** Sparse Categorical Crossentropy
+- **Epochs:** 10 | **Batch Size:** 32
+
+</details>
+
+---
+
+### 2. Machine Learning
+| Project | Description | Tech | Status |
+|---------|-------------|------|--------|
+| — | — | — | 🔜 Coming Soon |
+
+---
+
+### 3. Generative AI
+| Project | Description | Tech | Status |
+|---------|-------------|------|--------|
+| — | — | — | 🔜 Coming Soon |
+
+---
+
+### 4. Data Structures & Algorithms
+| Topic | Problems | Language | Status |
+|-------|----------|----------|--------|
+| — | — | — | 🔜 Coming Soon |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3.12**
-- **TensorFlow / Keras** — Model building & training
-- **NumPy** — Numerical operations
-- **Pandas** — Data loading & manipulation
-- **Matplotlib / Seaborn** — Visualization
-- **Scikit-learn** — Train/test split, classification report
-
----
-
-## 📁 Project Structure
-
-```
-Pep-Learning/
-├── mnist-dataset-cnn-implementation.ipynb   # Main notebook (full pipeline)
-└── README.md                                # Project documentation
-```
+| Category | Technologies |
+|----------|-------------|
+| **Languages** | Python |
+| **ML / DL** | TensorFlow, Keras, Scikit-learn, NumPy, Pandas |
+| **Visualization** | Matplotlib, Seaborn |
+| **Gen AI** | *(to be updated)* |
+| **DSA** | *(to be updated)* |
 
 ---
 
@@ -84,40 +98,22 @@ Pep-Learning/
 pip install tensorflow numpy pandas matplotlib seaborn scikit-learn
 ```
 
-### Run the Notebook
+### Clone & Explore
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vijay-xd/Pep-Learning.git
-   cd Pep-Learning
-   ```
-
-2. Open the notebook:
-   ```bash
-   jupyter notebook mnist-dataset-cnn-implementation.ipynb
-   ```
-
-3. Run all cells sequentially.
-
-> **Note:** The notebook was originally developed on [Kaggle](https://www.kaggle.com/) and uses the MNIST dataset from `kagglehub`. To run locally, download the dataset from Kaggle and update the file paths accordingly.
+```bash
+git clone https://github.com/vijay-xd/Pep-Learning.git
+cd Pep-Learning
+jupyter notebook
+```
 
 ---
 
-## 📈 Training Curves
+## 📈 Progress Tracker
 
-The model was trained for **10 epochs** with a batch size of **32**, using an 80/20 train-validation split with stratified sampling.
-
-- **Optimizer:** Adam
-- **Loss Function:** Sparse Categorical Crossentropy
-- **Metrics:** Accuracy
-
----
-
-## 📝 Key Takeaways
-
-- Even a **single Conv2D layer** CNN achieves near-99% accuracy on MNIST, showcasing the power of convolutional features over raw pixel values.
-- The gap between training (~99.9%) and validation (~98.6%) accuracy indicates mild overfitting — this could be improved with **Dropout**, **Data Augmentation**, or **additional Conv layers**.
-- All 10 digit classes achieve F1-scores ≥ 0.98, confirming robust per-class performance.
+- [x] Neural Networks — MNIST CNN Implementation
+- [ ] Machine Learning — Classification / Regression projects
+- [ ] Generative AI — LLM / Prompt Engineering projects
+- [ ] DSA — Arrays, Linked Lists, Trees, Graphs, DP
 
 ---
 
@@ -130,3 +126,9 @@ This project is open-source and available under the [MIT License](LICENSE).
 ## 🙋 Author
 
 **Vijay** — [@vijay-xd](https://github.com/vijay-xd)
+
+---
+
+<p align="center">
+  <i>⭐ Star this repo if you find it helpful!</i>
+</p>
