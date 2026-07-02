@@ -1,12 +1,12 @@
 # 🚀 Pep-Learning
 
-> **Placement preparation repository** — A collection of projects, implementations, and practice problems covering **Generative AI**, **Machine Learning**, **Neural Networks**, **Data Structures & Algorithms**, and more.
+> **Placement preparation repository** — A collection of projects, implementations, notes, and practice problems covering **Generative AI**, **Machine Learning**, **Neural Networks**, **Data Structures & Algorithms**, and more.
 
 ---
 
 ## 📌 About
 
-This repository serves as a centralized hub for all my placement training work. Each topic contains hands-on implementations, coding exercises, and real-world mini-projects built during placement classes.
+This repository serves as a centralized hub for all my placement training work. Each topic contains hands-on implementations, coding exercises, course notes, and real-world mini-projects built during placement classes.
 
 **Goal:** Build a strong, demonstrable portfolio covering the core CS & AI/ML concepts expected in technical interviews and placement rounds.
 
@@ -17,34 +17,57 @@ This repository serves as a centralized hub for all my placement training work. 
 ```
 Pep-Learning/
 │
-├── 📁 Neural Networks
-│   └── mnist-dataset-cnn-implementation.ipynb    # CNN for MNIST digit recognition (~98.6% accuracy)
+├── 📁 NN/                                         # Neural Network implementations
+│   ├── perceptron.ipynb                            # Single-layer Perceptron
+│   ├── perceptron_for_multiclass.ipynb             # Multi-class Perceptron
+│   ├── ANN.ipynb                                   # Artificial Neural Network
+│   ├── CNN.ipynb                                   # Convolutional Neural Network
+│   ├── cnn-implementation-from-scratch.ipynb       # CNN built from scratch
+│   ├── CNN-from-scratch/                           # CNN scratch implementation (with dataset)
+│   │   ├── digits-mnist-classification-using-cnn.ipynb
+│   │   ├── train.csv
+│   │   ├── test.csv
+│   │   └── sample_submission.csv
+│   └── data/                                       # MNIST raw data
 │
-├── 📁 Machine Learning
-│   └── (coming soon)
+├── 📁 Notes/                                       # Course notes (PDFs)
+│   ├── Intro.pdf
+│   ├── Artificial Intelligencr.pdf
+│   ├── Activation Functions.pdf
+│   ├── Neural Networks.pdf
+│   ├── Regression.pdf
+│   ├── Classification.pdf
+│   ├── Classification-DEcesion_tree.pdf
+│   ├── Decision Tree Regressor.pdf
+│   ├── Clustering.pdf
+│   ├── Encoding.pdf
+│   ├── Model Evaluation.pdf
+│   └── CIFAR-10 Dataset.pdf
 │
-├── 📁 Generative AI
-│   └── (coming soon)
-│
-├── 📁 DSA (Data Structures & Algorithms)
-│   └── (coming soon)
-│
+├── mnist-dataset-cnn-implementation.ipynb          # MNIST CNN (Kaggle notebook)
+├── requirements.txt                                # Python dependencies
+├── .gitignore
 └── README.md
 ```
-
-> 📝 *This repo is actively updated as new topics are covered in placement classes.*
 
 ---
 
 ## 🧠 Topics Covered
 
 ### 1. Neural Networks / Deep Learning
+
 | Project | Description | Tech | Status |
 |---------|-------------|------|--------|
-| [MNIST CNN](mnist-dataset-cnn-implementation.ipynb) | CNN from scratch for handwritten digit classification (0–9) | TensorFlow, Keras, Scikit-learn | ✅ Done |
+| [Perceptron](NN/perceptron.ipynb) | Single-layer perceptron implementation | Python, NumPy | ✅ Done |
+| [Multi-class Perceptron](NN/perceptron_for_multiclass.ipynb) | Perceptron for multi-class classification | Python, NumPy | ✅ Done |
+| [ANN](NN/ANN.ipynb) | Artificial Neural Network implementation | Python, TensorFlow | ✅ Done |
+| [CNN](NN/CNN.ipynb) | Convolutional Neural Network | TensorFlow, Keras | ✅ Done |
+| [CNN from Scratch](NN/cnn-implementation-from-scratch.ipynb) | CNN implementation without high-level APIs | Python, NumPy | ✅ Done |
+| [MNIST CNN (Kaggle)](mnist-dataset-cnn-implementation.ipynb) | CNN for handwritten digit classification (0–9) | TensorFlow, Keras, Scikit-learn | ✅ Done |
+| [MNIST Classification](NN/CNN-from-scratch/digits-mnist-classification-using-cnn.ipynb) | MNIST digit classification with CNN | TensorFlow, Keras | ✅ Done |
 
 <details>
-<summary><b>📊 MNIST CNN — Key Results</b></summary>
+<summary><b>📊 MNIST CNN (Kaggle) — Key Results</b></summary>
 
 - **Architecture:** Conv2D(32) → MaxPool2D → Flatten → Dense(128) → Dense(10, Softmax)
 - **Training Accuracy:** 99.9%
@@ -57,24 +80,43 @@ Pep-Learning/
 
 ---
 
-### 2. Machine Learning
-| Project | Description | Tech | Status |
-|---------|-------------|------|--------|
-| — | — | — | 🔜 Coming Soon |
+### 2. Course Notes (PDFs)
+
+| Topic | File |
+|-------|------|
+| Introduction to AI/ML | [Intro.pdf](Notes/Intro.pdf) |
+| Artificial Intelligence | [Artificial Intelligencr.pdf](Notes/Artificial%20Intelligencr.pdf) |
+| Activation Functions | [Activation Functions.pdf](Notes/Activation%20Functions.pdf) |
+| Neural Networks | [Neural Networks.pdf](Notes/Neural%20Networks.pdf) |
+| Regression | [Regression.pdf](Notes/Regression.pdf) |
+| Classification | [Classification.pdf](Notes/Classification.pdf) |
+| Decision Trees (Classification) | [Classification-DEcesion_tree.pdf](Notes/Classification-DEcesion_tree.pdf) |
+| Decision Tree Regressor | [Decision Tree Regressor.pdf](Notes/Decision%20Tree%20Regressor.pdf) |
+| Clustering | [Clustering.pdf](Notes/Clustering.pdf) |
+| Encoding | [Encoding.pdf](Notes/Encoding.pdf) |
+| Model Evaluation | [Model Evaluation.pdf](Notes/Model%20Evaluation.pdf) |
+| CIFAR-10 Dataset | [CIFAR-10 Dataset.pdf](Notes/CIFAR-10%20Dataset.pdf) |
 
 ---
 
-### 3. Generative AI
+### 3. Machine Learning
 | Project | Description | Tech | Status |
 |---------|-------------|------|--------|
-| — | — | — | 🔜 Coming Soon |
+| — | — | — | 🔜 |
 
 ---
 
-### 4. Data Structures & Algorithms
+### 4. Generative AI
+| Project | Description | Tech | Status |
+|---------|-------------|------|--------|
+| — | — | — | 🔜 |
+
+---
+
+### 5. Data Structures & Algorithms
 | Topic | Problems | Language | Status |
 |-------|----------|----------|--------|
-| — | — | — | 🔜 Coming Soon |
+| — | — | — | 🔜 |
 
 ---
 
@@ -83,7 +125,7 @@ Pep-Learning/
 | Category | Technologies |
 |----------|-------------|
 | **Languages** | Python |
-| **ML / DL** | TensorFlow, Keras, Scikit-learn, NumPy, Pandas |
+| **ML / DL** | TensorFlow, Keras, Scikit-learn, PyTorch, NumPy, Pandas |
 | **Visualization** | Matplotlib, Seaborn |
 | **Gen AI** | *(to be updated)* |
 | **DSA** | *(to be updated)* |
@@ -95,7 +137,7 @@ Pep-Learning/
 ### Prerequisites
 
 ```bash
-pip install tensorflow numpy pandas matplotlib seaborn scikit-learn
+pip install -r requirements.txt
 ```
 
 ### Clone & Explore
@@ -110,7 +152,9 @@ jupyter notebook
 
 ## 📈 Progress Tracker
 
-- [x] Neural Networks — MNIST CNN Implementation
+- [x] Neural Networks — Perceptron, ANN, CNN implementations
+- [x] Neural Networks — MNIST digit classification (CNN)
+- [x] Course Notes — AI, ML, DL theory (PDFs)
 - [ ] Machine Learning — Classification / Regression projects
 - [ ] Generative AI — LLM / Prompt Engineering projects
 - [ ] DSA — Arrays, Linked Lists, Trees, Graphs, DP
