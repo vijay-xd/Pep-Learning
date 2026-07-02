@@ -82,6 +82,18 @@ Pep-Learning/
 
 ### 2. Course Notes (PDFs)
 
+#### Notes auto-sync
+
+`Notes/` is kept in sync with [v0idgy/LPU_GenAI](https://github.com/v0idgy/LPU_GenAI)'s `Notes/` folder by [`.github/workflows/sync-notes.yml`](.github/workflows/sync-notes.yml):
+
+- Runs **Mon–Fri at 10:00 and 16:00 IST**, plus on-demand via `workflow_dispatch`
+- Pulls any new or changed file from the source repo
+- Converts anything that isn't already a PDF (images, Office docs, text) into one
+- Commits only when content actually changed, authored by **NotBOT**
+- Stops running after **2026-07-31** and disables itself
+
+The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
+
 | Topic | File |
 |-------|------|
 | Introduction to AI/ML | [Intro.pdf](Notes/Intro.pdf) |
