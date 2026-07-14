@@ -23,12 +23,21 @@ Pep-Learning/
 │   ├── ANN.ipynb                                   # Artificial Neural Network
 │   ├── CNN.ipynb                                   # Convolutional Neural Network
 │   ├── cnn-implementation-from-scratch.ipynb       # CNN built from scratch
+│   ├── rnn-from-scratch.ipynb                      # RNN built from scratch
+│   ├── RNN_PT.ipynb                                # RNN PyTorch implementation
+│   ├── RNN_tensorflow_implementation.ipynb         # RNN TensorFlow implementation
 │   ├── CNN-from-scratch/                           # CNN scratch implementation (with dataset)
 │   │   ├── digits-mnist-classification-using-cnn.ipynb
 │   │   ├── train.csv
 │   │   ├── test.csv
 │   │   └── sample_submission.csv
 │   └── data/                                       # MNIST raw data
+│
+├── 📁 NLP/                                         # Natural Language Processing
+│   ├── NLP_basics.ipynb                            # NLP Basics implementation
+│   ├── nlp-basics.ipynb
+│   ├── spam.csv
+│   └── twitter_mask4.jpeg
 │
 ├── 📁 Notes/                                       # Course notes (PDFs)
 │   ├── Intro.pdf
@@ -63,6 +72,9 @@ Pep-Learning/
 | [ANN](NN/ANN.ipynb) | Artificial Neural Network implementation | Python, TensorFlow | ✅ Done |
 | [CNN](NN/CNN.ipynb) | Convolutional Neural Network | TensorFlow, Keras | ✅ Done |
 | [CNN from Scratch](NN/cnn-implementation-from-scratch.ipynb) | CNN implementation without high-level APIs | Python, NumPy | ✅ Done |
+| [RNN from Scratch](NN/rnn-from-scratch.ipynb) | RNN built from scratch | Python, NumPy | ✅ Done |
+| [RNN PyTorch](NN/RNN_PT.ipynb) | RNN PyTorch implementation | Python, PyTorch | ✅ Done |
+| [RNN TensorFlow](NN/RNN_tensorflow_implementation.ipynb) | RNN TensorFlow implementation | Python, TensorFlow | ✅ Done |
 | [MNIST CNN (Kaggle)](mnist-dataset-cnn-implementation.ipynb) | CNN for handwritten digit classification (0–9) | TensorFlow, Keras, Scikit-learn | ✅ Done |
 | [MNIST Classification](NN/CNN-from-scratch/digits-mnist-classification-using-cnn.ipynb) | MNIST digit classification with CNN | TensorFlow, Keras | ✅ Done |
 
@@ -107,6 +119,10 @@ The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
 | Clustering | [Clustering.pdf](Notes/Clustering.pdf) |
 | Encoding | [Encoding.pdf](Notes/Encoding.pdf) |
 | Model Evaluation | [Model Evaluation.pdf](Notes/Model%20Evaluation.pdf) |
+| Natural Language Processing | [Natural Language Processing.pdf](Notes/Natural%20Language%20Processing.pdf) |
+| Artificial Neural Network (ANN) | [ANN.pdf](Notes/ANN.pdf) |
+| Convolutional Neural Network (CNN) | [CNN .pdf](Notes/CNN%20.pdf) |
+| Recurrent Neural Network (RNN) | [RNN.pdf](Notes/RNN.pdf) |
 | CIFAR-10 Dataset | [CIFAR-10 Dataset.pdf](Notes/CIFAR-10%20Dataset.pdf) |
 
 ---
@@ -118,10 +134,10 @@ The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
 
 ---
 
-### 4. Generative AI
+### 4. Generative AI & NLP
 | Project | Description | Tech | Status |
 |---------|-------------|------|--------|
-| — | — | — | 🔜 |
+| [NLP Basics](NLP/NLP_basics.ipynb) | Basics of Natural Language Processing | Python, NLTK | ✅ Done |
 
 ---
 
@@ -164,7 +180,7 @@ jupyter notebook
 
 ## 📈 Progress Tracker
 
-- [x] Neural Networks — Perceptron, ANN, CNN implementations
+- [x] Neural Networks — Perceptron, ANN, CNN, RNN implementations
 - [x] Neural Networks — MNIST digit classification (CNN)
 - [x] Course Notes — AI, ML, DL theory (PDFs)
 - [ ] Machine Learning — Classification / Regression projects
