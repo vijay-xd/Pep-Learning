@@ -1,4 +1,4 @@
-name: Sync LPU_GenAI Notes
+name: Sync LPU-GenAi Notes
 
 # Mon-Fri, 10:00 and 16:00 IST (UTC+5:30) = 04:30 and 10:30 UTC.
 # Auto-stops doing work (and disables itself) after 2026-07-31.
@@ -60,7 +60,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: sync notes from v0idgy/LPU_GenAI" -m "Done automatically by NotBOT 🤖"
+            git commit -m "chore: sync notes from alenso0/LPU-GenAi" -m "Done automatically by NotBOT 🤖"
             git pull --rebase origin main
             git push
           fi

@@ -96,7 +96,7 @@ Pep-Learning/
 
 #### Notes auto-sync
 
-`Notes/` is kept in sync with [v0idgy/LPU_GenAI](https://github.com/v0idgy/LPU_GenAI)'s `Notes/` folder by [`.github/workflows/sync-notes.yml`](.github/workflows/sync-notes.yml):
+`Notes/` is kept in sync with [alenso0/LPU-GenAi](https://github.com/alenso0/LPU-GenAi)'s `Notes/` folder by [`.github/workflows/sync-notes.yml`](.github/workflows/sync-notes.yml):
 
 - Runs **Mon–Fri at 10:00 and 16:00 IST**, plus on-demand via `workflow_dispatch`
 - Pulls any new or changed file from the source repo
@@ -138,6 +138,13 @@ The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
 | Project | Description | Tech | Status |
 |---------|-------------|------|--------|
 | [NLP Basics](NLP/NLP_basics.ipynb) | Basics of Natural Language Processing | Python, NLTK | ✅ Done |
+| [BERT Warmup](GEN-AI/BERT_Warmup.ipynb) | BERT implementation warmup | Python, Transformers | ✅ Done |
+| [BERT Sentiment Analysis](GEN-AI/BERT_Usecase_Sentiment_Analysis.ipynb) | Sentiment analysis using BERT | Python, Transformers | ✅ Done |
+| [Diffusion Model](GEN-AI/Diffusion_Model-2.ipynb) | Diffusion model implementation | Python | ✅ Done |
+| [RAG Langchain](GEN-AI/RAG_Langchain_Example.ipynb) | RAG example with Langchain | Python, Langchain | ✅ Done |
+| [RAG Step-by-Step](GEN-AI/RAG_Step_by_Step-2.ipynb) | RAG implemented step-by-step from scratch | Python | ✅ Done |
+| [Ollama Notebook](GEN-AI/ollama.ipynb) | Interaction with Ollama | Python | ✅ Done |
+| [Ollama App Scaffold](OLLAMA_APP/) | Standalone Python project scaffold for an Ollama-based app (uv-managed) | Python | ✅ Done |
 
 ---
 
@@ -155,7 +162,7 @@ The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
 | **Languages** | Python |
 | **ML / DL** | TensorFlow, Keras, Scikit-learn, PyTorch, NumPy, Pandas |
 | **Visualization** | Matplotlib, Seaborn |
-| **Gen AI** | *(to be updated)* |
+| **Gen AI** | Langchain, Transformers, Ollama, BERT, Diffusion Models |
 | **DSA** | *(to be updated)* |
 
 ---
@@ -184,7 +191,7 @@ jupyter notebook
 - [x] Neural Networks — MNIST digit classification (CNN)
 - [x] Course Notes — AI, ML, DL theory (PDFs)
 - [ ] Machine Learning — Classification / Regression projects
-- [ ] Generative AI — LLM / Prompt Engineering projects
+- [x] Generative AI — LLM / Prompt Engineering projects
 - [ ] DSA — Arrays, Linked Lists, Trees, Graphs, DP
 
 ---

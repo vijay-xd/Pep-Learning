@@ -1,4 +1,4 @@
-"""Mirror the Notes/ folder from v0idgy/LPU_GenAI into this repo's Notes/ folder,
+"""Mirror the Notes/ folder from alenso0/LPU-GenAi into this repo's Notes/ folder,
 converting any non-PDF source file to PDF along the way.
 
 Run by .github/workflows/sync-notes.yml on a schedule. Safe to re-run: files are
@@ -14,8 +14,8 @@ from urllib.parse import quote
 
 import requests
 
-OWNER = "v0idgy"
-REPO = "LPU_GenAI"
+OWNER = "alenso0"
+REPO = "LPU-GenAi"
 BRANCH = "main"
 SRC_PREFIX = "Notes"
 DEST_DIR = pathlib.Path("Notes")
