@@ -53,7 +53,12 @@ Pep-Learning/
 │   ├── Model Evaluation.pdf
 │   └── CIFAR-10 Dataset.pdf
 │
+├── 📁 GEN-AI/                                      # Generative AI implementations (BERT, RAG, etc.)
+│
+├── 📁 OLLAMA_APP/                                  # Standalone Ollama-based App (UV-managed)
+│
 ├── mnist-dataset-cnn-implementation.ipynb          # MNIST CNN (Kaggle notebook)
+├── bhagavad-gita-in-english-source-file-2.pdf      # Source document for RAG pipelines
 ├── requirements.txt                                # Python dependencies
 ├── .gitignore
 └── README.md
@@ -94,7 +99,7 @@ Pep-Learning/
 
 ### 2. Course Notes (PDFs)
 
-#### Notes auto-sync
+#### 📚 Automated Course Notes Sync
 
 `Notes/` is kept in sync with [alenso0/LPU-GenAi](https://github.com/alenso0/LPU-GenAi)'s `Notes/` folder by [`.github/workflows/sync-notes.yml`](.github/workflows/sync-notes.yml):
 
@@ -134,17 +139,17 @@ The sync logic lives in [`scripts/sync_notes.py`](scripts/sync_notes.py).
 
 ---
 
-### 4. Generative AI & NLP
+### 4. Generative AI & Advanced NLP
 | Project | Description | Tech | Status |
 |---------|-------------|------|--------|
-| [NLP Basics](NLP/NLP_basics.ipynb) | Basics of Natural Language Processing | Python, NLTK | ✅ Done |
-| [BERT Warmup](GEN-AI/BERT_Warmup.ipynb) | BERT implementation warmup | Python, Transformers | ✅ Done |
-| [BERT Sentiment Analysis](GEN-AI/BERT_Usecase_Sentiment_Analysis.ipynb) | Sentiment analysis using BERT | Python, Transformers | ✅ Done |
-| [Diffusion Model](GEN-AI/Diffusion_Model-2.ipynb) | Diffusion model implementation | Python | ✅ Done |
-| [RAG Langchain](GEN-AI/RAG_Langchain_Example.ipynb) | RAG example with Langchain | Python, Langchain | ✅ Done |
-| [RAG Step-by-Step](GEN-AI/RAG_Step_by_Step-2.ipynb) | RAG implemented step-by-step from scratch | Python | ✅ Done |
-| [Ollama Notebook](GEN-AI/ollama.ipynb) | Interaction with Ollama | Python | ✅ Done |
-| [Ollama App Scaffold](OLLAMA_APP/) | Standalone Python project scaffold for an Ollama-based app (uv-managed) | Python | ✅ Done |
+| [Core NLP Fundamentals](NLP/NLP_basics.ipynb) | Foundations of Natural Language Processing | Python, NLTK | ✅ Done |
+| [Introduction to BERT](GEN-AI/BERT_Warmup.ipynb) | Hands-on exploration of BERT architecture | Python, Transformers | ✅ Done |
+| [BERT-Powered Sentiment Analysis](GEN-AI/BERT_Usecase_Sentiment_Analysis.ipynb) | Text classification and sentiment prediction | Python, Transformers | ✅ Done |
+| [Image Gen Diffusion Models](GEN-AI/Diffusion_Model-2.ipynb) | Practical implementation of diffusion models | Python | ✅ Done |
+| [Langchain RAG Pipeline](GEN-AI/RAG_Langchain_Example.ipynb) | Retrieval-Augmented Generation using Langchain | Python, Langchain | ✅ Done |
+| [Building RAG from Scratch](GEN-AI/RAG_Step_by_Step-2.ipynb) | Custom step-by-step RAG architecture implementation | Python | ✅ Done |
+| [Local LLM with Ollama](GEN-AI/ollama.ipynb) | Inferencing local large language models | Python | ✅ Done |
+| [Ollama Application Boilerplate](OLLAMA_APP/) | Production-ready standalone UV project scaffold | Python | ✅ Done |
 
 ---
 
